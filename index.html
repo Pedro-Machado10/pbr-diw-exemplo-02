@@ -6,8 +6,7 @@
     <title>Testes Flexbox </title>
 
     <style>
-* { 
-
+*{ 
     font-size: 16px;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -16,9 +15,9 @@
     border: 1px solid #c2c2c2;
     box-shadow: 0.5rem .5rem .3rem .01rem #c2c2c2;
     height: 30rem;
-    height: 35rem;
     display: flex;
     flex-wrap: wrap;
+    align-content: start;
 }
 
 .item { 
@@ -27,29 +26,35 @@
     color: white;
     font-weight: bold;
     padding: 1rem;
-    margin: 1rem;
+    margin: .1rem;
     border: 1px solid #c2c2c2;
     box-shadow: 0.5rem .5rem .3rem .01rem #c2c2c2;
-    width: 5em;
+    width: 5rem;
     height: 5rem;
 
 } 
 
-.item1 {
-      width: 30rem;
+.logo {
+      flex-grow: 1;
+    } 
 
+ .titulodosite {
+      flex-grow: 20;
+ }
+ .menu {
+     flex-grow: 1;
  }
 
     </style>
 </head>
 <body>
-    <div class="container">
+    <header class="container">
 
-        <div class="item">item 01 </div>
-        <div class="item">item 02</div>
-        <div class="item">item 03</div>
+        <div class="item logo"> logo </div>
+        <div class="item titulodosite"> Título do Site  </div>
+        <div class="item menu"> Menu  </div>
 
-    </div>
+    </header>
      
 
 </body>
